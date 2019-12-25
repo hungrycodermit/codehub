@@ -109,7 +109,6 @@ body{
     width: 50%;
     display: inline-block;
     margin-right: 0px;
-    background-color:black;
 }
 
 .sec-1 img{
@@ -246,9 +245,19 @@ body{
 
 @media only screen and (max-width: 770px){
 
+    .fixnav{
+        max-width: 100%;
+        background-color: inherit;
+        text-align: center; 
+        color: white;
+        font-weight: 100;
+        padding: 25px 0px;
+        box-sizing: border-box;
+    }
+
     .banner .overlay{
         position: absolute;
-        top: 30%;
+        top: 27%;
         color: white;
         font-size: 35px;
         width: 100%;
@@ -297,7 +306,7 @@ body{
     }
 
     .footer{
-        margin-top: 10%;
+        margin-top: 9%;
         background-color: black;
         padding: 15px;
         text-align: center;
