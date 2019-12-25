@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-boxs;
+}
+
+*::selection{
+    background-color:  #4a2c2a;
+    color: white;
+}
+
+body{
+    width: 100%;
+    padding: 0px 60px 10px;
+    box-sizing: border-box;
+    background-color: #0F0F0F;
+    color: white;
+}
+
+.fixnav{
+    max-width: 100%;
+    background-color: inherit;
+    text-align: center; 
+    color: white;
+    font-weight: 100;
+    padding: 40px 0px;
+    box-sizing: border-box;
+}
+
+.fixnav h1{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner{
+    max-width: 100%;
+    position: relative;
+}
+
+.banner .overlay{
+    position: absolute;
+    top: 35%;
+    color: white;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner .overlay h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-image{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 22px;
+    line-height: 2.2em;
+}
+
+.wrapper{
+    text-decoration: none;
+    width: 65%;
+    margin: 80px auto 0px;
+}
+
+.heading .wrapper h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading a{
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 30px;
+    letter-spacing: 4px;
+}
+
+.main-section{
+    text-align: center;
+    width: 60%;
+    margin: 100px auto 0px;
+}
+
+.main-section h1{
+    margin-bottom: 80px;
+}
+
+.main-wrapper{
+    white-space: nowrap;
+}
+
+.sec-1{
+    width: 50%;
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.sec-1 img{
+    width: 30%;
+}
+
+.sec-2{
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.sec-2 img{
+    width: 30%;
+}
+
+.blog{
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 22px;
+}
+
+.blog .blog-head h1{
+    text-transform: capitalize;
+    margin: 50px 0px;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    display: inline-block;
+}
+
+.eqcols{
+    width: 100%;
+    white-space: nowra;
+    display:table;
+}
+
+.col1{
+    width: 50%;
+    display: table-cell;
+}
+
+.col1 img{
+    width: 100%;
+    display: block;
+    /* vertical-align: bottom; */
+}
+
+.col2{
+    width: 50%;
+    vertical-align: top;
+    display: table-cell;
+}
+
+.col2__1{
+    color: gray;
+    margin-top: 20%;
+    margin-bottom: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+}
+
+.col2__2{
+    text-transform: capitalize;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+
+.col2__link{
+    color: white;
+    display: inline-block;
+    letter-spacing: 4px;
+}
+
+.footer{
+    margin-top: 10%;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__img{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 30px;
+}
+
+
+
+
+
+/*******Media queries********/
+
+
+@media only screen and (max-width: 1067px){
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 928px){
+
+    .eqcols{
+        display: block;
+    }
+
+    .col1{
+        width: 100%;
+        display: block;
+    }
+
+    .col2{
+        width: 100%;
+        display: block;
+    }
+
+    .col2__1{
+        margin: 40px 0px 10px;
+        font-size: 1em;
+    }
+
+    .col2__2{
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 770px){
+
+    .banner .overlay{
+        position: absolute;
+        top: 30%;
+        color: white;
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-section{
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .sec-1{
+        width: 100%;
+        display: block;
+    }
+
+    .sec-2{
+        width: 100%;
+        display: block;
+    }
+
+    .blog{
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .wrapper{
+        width: 90%;
+    }
+    .wrapper h1{
+        font-size: 25px;
+        line-height: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 430px){
+
+    .banner .overlay{
+        position: absolute;
+        top: 32%;
+        color: white;
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer{
+        margin-top: 10%;
+        background-color: black;
+        padding: 15px;
+        text-align: center;
+        font-size: 10px;
+    }
+    
+    .footer__img{
+        display: inline-block;
+        vertical-align: bottom;
+        width: 20px;
+    }
+}
